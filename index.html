@@ -130,6 +130,66 @@ animation:floatUp linear infinite;
 pointer-events:none;
 }
 
+.moon{
+position:fixed;
+top:80px;
+right:100px;
+width:120px;
+height:120px;
+border-radius:50%;
+background:#fff6c7;
+
+box-shadow:
+0 0 30px #fff6c7,
+0 0 60px #fff6c7,
+0 0 90px rgba(255,246,199,.8);
+
+z-index:-1;
+
+animation:moonGlow 4s ease-in-out infinite;
+}
+
+.star{
+position:fixed;
+width:2px;
+height:2px;
+background:white;
+border-radius:50%;
+pointer-events:none;
+animation:twinkle 3s infinite;
+z-index:-2;
+}
+
+@keyframes moonGlow{
+0%,100%{
+transform:scale(1);
+box-shadow:
+0 0 30px #fff6c7,
+0 0 60px #fff6c7,
+0 0 90px rgba(255,246,199,.8);
+}
+
+50%{
+transform:scale(1.08);
+box-shadow:
+0 0 40px #fff6c7,
+0 0 80px #fff6c7,
+0 0 120px rgba(255,246,199,1);
+}
+}
+
+@keyframes twinkle{
+0%,100%{
+opacity:.2;
+transform:scale(1);
+}
+
+50%{
+opacity:1;
+transform:scale(2);
+}
+}
+
 @keyframes floatUp{
 0%{
 transform:translateY(0);
@@ -156,15 +216,15 @@ transform:translateY(0);
 <body>
 
 <section class="hero" id="opening">
-<h1>Hey Sayang 💛</h1>
+<h1>Hey Sayang 🤍</h1>
 
-<p class="subtitle">
+<div class="subtitle">
 I made something special for you today.
 Just a little gift from your prettiest girlfriend.
 
 Before you start reading,
 I just want you to know that every word here comes from my heart. 💛
-</p>
+</div>
 
 <button class="btn" onclick="openGift()">
 Open Your Birthday Gift 🎁
@@ -292,7 +352,30 @@ heart.remove();
 
 setInterval(createHeart,400);
 
+for(let i=0;i<120;i++){
+
+const star=document.createElement("div");
+
+star.classList.add("star");
+
+const size=Math.random()*3+1;
+
+star.style.width=size+"px";
+star.style.height=size+"px";
+
+star.style.left=Math.random()*100+"vw";
+star.style.top=Math.random()*100+"vh";
+
+star.style.animationDelay=
+Math.random()*5+"s";
+
+document.body.appendChild(star);
+
+}
+
 </script>
 
-</body>
+<body>
+
+<div class="moon"></div>
 </html>
