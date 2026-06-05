@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Happy Birthday mi vida 💛</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Dancing+Script:wght@700&family=Sacramento&display=swap" rel="stylesheet">
 
 <style>
 *{
@@ -77,7 +77,7 @@ display:none;
 }
 
 .letter{
-max-width:900px;
+max-width:700px;
 margin:auto;
 padding:40px 25px;
 line-height:2;
@@ -107,7 +107,7 @@ padding:30px;
 }
 
 .final h2{
-font-size:5rem;
+font-size:clamp(3rem,8vw,5rem);
 font-family:'Dancing Script',cursive;
 color:white;
 margin-bottom:20px;
@@ -144,7 +144,7 @@ box-shadow:
 0 0 60px #fff6c7,
 0 0 90px rgba(255,246,199,.8);
 
-z-index:-1;
+z-index:-2;
 
 animation:moonGlow 4s ease-in-out infinite;
 }
@@ -157,7 +157,7 @@ background:white;
 border-radius:50%;
 pointer-events:none;
 animation:twinkle 3s infinite;
-z-index:-2;
+z-index:-1;
 }
 
 @keyframes moonGlow{
@@ -217,7 +217,6 @@ transform:translateY(0);
 
 <div class="moon"></div>
 
-<div>
 <section class="hero" id="opening">
 <h1>Hey Sayang 🤍</h1>
 
@@ -226,7 +225,7 @@ I made something special for you today.
 Just a little gift from your prettiest girlfriend.
 
 Before you start reading,
-I just want you to know that every word here comes from my heart. 💛
+I just want you to know that every word here comes from my heart.🤍
 </div>
 
 <button class="btn" onclick="openGift()">
@@ -247,11 +246,19 @@ class="btn"
 </div>
 
 <div class="letter">
+<h2 style="
+text-align:center;
+font-family:'Dancing Script',cursive;
+font-size:3rem;
+margin-bottom:30px;
+color:white;
+">
+💌 For My Favorite Person In The Entire Universe 💌
+</h2>
 
-Happy Birthday, mi vida💛
+Happy Birthday, mi vida🤍
 
-It's crazyy to think that we've been doing this whole relationship thing from miles apart sincee day onee. We haven't met yet, not even once, but somehow you've become one of the most important people in my lifeee.
-Jujur, kalaauuu dulu ada yang bilang aku bisa sayaangg sama seseorang yang belum pernah aku temui secara langsung, mungkin akuu nggaaa akan percayaa. But then I met yoouuu.
+It's crazyy to think that we've been doing this whole relationship thing from miles apart sincee day onee. We haven't met yet, not even once, but somehow you've become one of the most important people in my lifeee. Jujur, kalaauuu dulu ada yang bilang aku bisa sayaangg sama seseorang yang belum pernah aku temui secara langsung, mungkin akuu nggaaa akan percayaa. But then I met yoouuu.
 
 And here we are.
 
@@ -268,8 +275,7 @@ Walaupuunn kadang kamuu sukaa overthink tentang aku karena kita LDR, aku harap k
 
 My feelings for you have always been genuine.💗
 
-Aku gapernah lihat jarak sebagai alasan buaatt carii yang lain. Aku tetap memilih kamu, setiap hari, dengan sadar dan tulus.
-Aku tahu kamu sering khawatir, sering mikir yang enggak-enggak, sering takut kehilangan aku. But baby, if only you could see yourself through my eyes, you'd know how special you are to me.💛
+Aku gapernah lihat jarak sebagai alasan buaatt carii yang lain. Aku tetap memilih kamu, setiap hari, dengan sadar dan tulus. Aku tahu kamu sering khawatir, sering mikir yang enggak-enggak, sering takut kehilangan aku. But baby, if only you could see yourself through my eyes, you'd know how special you are to me.🤍
 
 And yes, since it's your birthday, aku juga mau nitip beberapa pesan kecil...💬❤️
 
@@ -308,16 +314,16 @@ all these calls, messages, good mornings,
 good nights, and birthday wishes from afar
 will finally turn into a real hug.
 
-Until that day comes, I'll keep loving you from here.💛
+Until that day comes, I'll keep loving you from here.🤍
 
-Happy Birthday, my favorite person.💛
+Happy Birthday, my favorite person.🤍
 
 My favorite notification.
 My favorite voice.
 My favorite smile.
 My favorite human.
 
-Love, your hottest, cutest, most gorgeous, prettiest, and forever irreplaceable girlfriend.💋
+Love, your hottest, cutest, most gorgeous, prettiest, and forever irreplaceable girlfriend.💋🤍
 
 </div>
 
@@ -335,9 +341,9 @@ function createHeart(){
 const heart=document.createElement("div");
 heart.classList.add("heart");
 heart.innerHTML=[
-"💛",
+"💘",
 "💖",
-"❤️",
+"🤍",
 "✨",
 "⭐",
 "🌟",
@@ -378,5 +384,5 @@ document.body.appendChild(star);
 
 </script>
 
-<body>
+</body>
 </html>
