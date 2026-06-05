@@ -16,9 +16,15 @@ font-family:'Poppins',sans-serif;
 }
 
 body{
-background:linear-gradient(135deg,#fff8dc,#ffe4e1);
+background:linear-gradient(
+180deg,
+#0b1026 0%,
+#141b3a 35%,
+#1f295c 70%,
+#2f3d7a 100%
+);
 overflow-x:hidden;
-color:#333;
+color:white;
 }
 
 .hero{
@@ -42,6 +48,7 @@ margin-bottom:20px;
 font-size:1.1rem;
 max-width:600px;
 line-height:1.8;
+color:#f8f4e8;
 }
 
 .btn{
@@ -72,6 +79,7 @@ line-height:2;
 white-space:pre-wrap;
 font-size:1rem;
 animation:fadeIn 1.5s ease;
+color:#f8f4e8;
 }
 
 .music-box{
@@ -255,7 +263,15 @@ window.scrollTo(0,0);
 function createHeart(){
 const heart=document.createElement("div");
 heart.classList.add("heart");
-heart.innerHTML=["💛","💖","❤️","✨"][Math.floor(Math.random()*4)];
+heart.innerHTML=[
+"💛",
+"💖",
+"❤️",
+"✨",
+"⭐",
+"🌟",
+"💫"
+][Math.floor(Math.random()*7)];
 heart.style.left=Math.random()*100+"vw";
 heart.style.animationDuration=(Math.random()*4+4)+"s";
 
