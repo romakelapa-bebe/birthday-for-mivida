@@ -212,6 +212,36 @@ opacity:1;
 transform:translateY(0);
 }
 }
+.subtitle p{
+margin-bottom:20px;
+}
+
+.subtitle p:last-child{
+margin-bottom:0;
+}
+
+@media (max-width:768px){
+
+.hero{
+padding:25px;
+}
+
+.letter{
+padding:25px 18px;
+line-height:1.9;
+}
+
+.btn{
+padding:13px 28px;
+font-size:.95rem;
+}
+
+.final{
+padding:20px;
+}
+
+}
+  
 </style>
 </head>
 <body>
@@ -233,14 +263,6 @@ I just want you to know that every word here comes from my heart. 🤍
 </p>
 </div>
 
-.subtitle p{
-margin-bottom:20px;
-}
-
-.subtitle p:last-child{
-margin-bottom:0;
-}
-
 <button class="btn" onclick="openGift()">
 Open Your Birthday Gift 🎁
 </button>
@@ -258,7 +280,8 @@ class="btn"
 </a>
 </div>
 
-</div> <!-- letter -->
+<div class="letter">
+
 <h2 style="
 text-align:center;
 font-family:'Dancing Script',cursive;
@@ -315,10 +338,10 @@ I hope this new year of your life brings you happiness, laughter, success, good 
 
 </div>
 
-</div> <!-- final -->
+<div class="final">
 <h2>I Love You, Always 🤍</h2>
 
-</div> <!-- latter -->
+<div class="letter">
 No matter how many miles separate us,
 you will always have a special place in my heart.
 
@@ -337,6 +360,8 @@ My favorite smile.
 My favorite human.
 
 Love, your hottest, cutest, most gorgeous, prettiest, and forever irreplaceable girlfriend.💋🤍
+
+</div>
 
 </div>
 
@@ -392,28 +417,6 @@ star.style.animationDelay=
 Math.random()*5+"s";
 
 document.body.appendChild(star);
-
-}
-
-@media (max-width:768px){
-
-.hero{
-padding:25px;
-}
-
-.letter{
-padding:25px 18px;
-line-height:1.9;
-}
-
-.btn{
-padding:13px 28px;
-font-size:.95rem;
-}
-
-.final{
-padding:20px;
-}
 
 }
 
