@@ -48,9 +48,10 @@ margin-bottom:20px;
 }
 
 .subtitle{
-font-size:1.1rem;
+font-size:clamp(.95rem,3vw,1.1rem);
 max-width:600px;
 line-height:1.8;
+padding:0 10px;
 color:#f8f4e8;
 }
 
@@ -232,6 +233,14 @@ I just want you to know that every word here comes from my heart. 🤍
 </p>
 </div>
 
+.subtitle p{
+margin-bottom:20px;
+}
+
+.subtitle p:last-child{
+margin-bottom:0;
+}
+
 <button class="btn" onclick="openGift()">
 Open Your Birthday Gift 🎁
 </button>
@@ -249,11 +258,11 @@ class="btn"
 </a>
 </div>
 
-<div class="letter">
+</div> <!-- letter -->
 <h2 style="
 text-align:center;
 font-family:'Dancing Script',cursive;
-font-size:3rem;
+font-size:clamp(2rem,8vw,3rem);
 margin-bottom:30px;
 color:white;
 ">
@@ -306,10 +315,10 @@ I hope this new year of your life brings you happiness, laughter, success, good 
 
 </div>
 
-<div class="final">
+</div> <!-- final -->
 <h2>I Love You, Always 🤍</h2>
 
-<div class="letter">
+</div> <!-- latter -->
 No matter how many miles separate us,
 you will always have a special place in my heart.
 
@@ -383,6 +392,28 @@ star.style.animationDelay=
 Math.random()*5+"s";
 
 document.body.appendChild(star);
+
+}
+
+@media (max-width:768px){
+
+.hero{
+padding:25px;
+}
+
+.letter{
+padding:25px 18px;
+line-height:1.9;
+}
+
+.btn{
+padding:13px 28px;
+font-size:.95rem;
+}
+
+.final{
+padding:20px;
+}
 
 }
 
