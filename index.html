@@ -272,16 +272,6 @@ Open Your Birthday Gift 🎁
 
 <section id="content" class="hidden">
 
-<div style="text-align:center;padding:20px;">
-<a
-href="https://www.youtube.com/watch?v=dBFp0Ext0y8"
-target="_blank"
-class="btn"
->
-🎵 Play Our Song
-</a>
-</div>
-
 <div class="letter">
 
 <h2 style="
@@ -390,9 +380,20 @@ and every day after that. 💋
 <script>
 
 function openGift(){
+
 document.getElementById("opening").style.display="none";
 document.getElementById("content").classList.remove("hidden");
+
+const music = document.getElementById("bgMusic");
+
+music.volume = 0.35;
+
+music.play().catch(err=>{
+    console.log("Audio error:", err);
+});
+
 window.scrollTo(0,0);
+
 }
 
 function createHeart(){
@@ -441,6 +442,10 @@ document.body.appendChild(star);
 }
 
 </script>
+
+<audio id="bgMusic" loop>
+    <source src="oneonly.mp3.mp3" type="audio/mpeg">
+</audio>
 
 </body>
 </html>
